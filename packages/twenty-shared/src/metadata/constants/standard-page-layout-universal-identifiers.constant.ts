@@ -451,6 +451,14 @@ export const STANDARD_PAGE_LAYOUT_UNIVERSAL_IDENTIFIERS = {
           },
         },
       },
+      summary: {
+        universalIdentifier: '2e8ceca0-764e-418f-94b3-247d22431f7a',
+        widgets: {
+          summary: {
+            universalIdentifier: '81d25e6e-5345-4686-9b22-5aac26360d24',
+          },
+        },
+      },
       callRecording: {
         universalIdentifier: 'a3dff71b-ca06-4709-9b39-ca4f30108ab4',
         widgets: {
