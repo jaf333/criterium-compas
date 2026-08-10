@@ -64,6 +64,40 @@ const StyledCanvasLayer = styled.div`
   z-index: 1;
 `;
 
+// CRITERIUM COMPÁS: el lockup acompaña a la animación de bienvenida.
+const StyledBrandLogo = styled.img`
+  animation: welcomeLogoIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) 0.8s both;
+  height: 36px;
+  position: absolute;
+  top: calc(50% - 110px);
+  will-change: opacity;
+  z-index: 2;
+
+  @keyframes welcomeLogoIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  &.is-leaving,
+  &.is-flying {
+    animation: welcomeLogoOut 0.3s ease-out forwards;
+  }
+
+  @keyframes welcomeLogoOut {
+    to {
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+`;
+
 const StyledTitle = styled.div`
   align-items: center;
   animation: welcomeTitleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) 0.8s both;
@@ -281,6 +315,11 @@ export const WelcomeOverlay = () => {
       <StyledCanvasLayer>
         <WelcomeHalftoneCanvas isLeaving={isWelcomeAnimationLeaving} />
       </StyledCanvasLayer>
+      <StyledBrandLogo
+        className={titleClassName}
+        src="/images/criterium-horizontal.svg"
+        alt=""
+      />
       <StyledTitle
         id={WELCOME_TITLE_SOURCE_ELEMENT_ID}
         className={titleClassName}
