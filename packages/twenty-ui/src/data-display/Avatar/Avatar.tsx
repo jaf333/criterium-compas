@@ -1,6 +1,6 @@
 import { isNonEmptyString, isNull, isUndefined } from '@sniptt/guards';
 import { clsx } from 'clsx';
-import { useState } from 'react';
+import { type CSSProperties } from 'react';
 
 import { handleClickableElementKeyDown } from '@ui/accessibility/utils/handleClickableElementKeyDown';
 import { type AvatarSize } from '@ui/data-display/Avatar/types/AvatarSize';
@@ -45,10 +45,6 @@ export const Avatar = ({
 }: AvatarProps) => {
   const theme = useTheme();
 
-  const [erroredAvatarImageURI, setErroredAvatarImageURI] = useState<
-    string | null
-  >(null);
-
   const avatarImageURI = isNonEmptyString(avatarUrl) ? avatarUrl : null;
 
   const placeholderFirstChar = placeholder?.trim()?.charAt(0);
@@ -56,14 +52,7 @@ export const Avatar = ({
     !placeholderFirstChar || placeholderFirstChar === '';
   const placeholderChar = placeholderFirstChar?.toUpperCase() || '-';
 
-  const showPlaceholder =
-    isNull(avatarImageURI) || erroredAvatarImageURI === avatarImageURI;
-
-  const handleImageError = () => {
-    if (isNonEmptyString(avatarImageURI)) {
-      setErroredAvatarImageURI(avatarImageURI);
-    }
-  };
+  const showPlaceholder = isNull(avatarImageURI);
 
   const fixedColor = isPlaceholderFirstCharEmpty
     ? theme.font.color.tertiary
@@ -110,7 +99,7 @@ export const Avatar = ({
     ...(type === 'app' && appliedBorderColor
       ? { '--avatar-border': `1px solid ${appliedBorderColor}` }
       : {}),
-  } as React.CSSProperties;
+  } as CSSProperties;
 
   return (
     <div
@@ -143,11 +132,13 @@ export const Avatar = ({
       ) : showPlaceholder ? (
         <span className={styles.placeholderChar}>{placeholderChar}</span>
       ) : (
-        <img
+        // Render the image as a CSS background rather than an <img>: Safari
+        // repaints a replaced <img> that decodes after first paint without
+        // repainting its siblings, displacing neighbouring content (board card
+        // headers overlap the card above).
+        <div
           className={styles.image}
-          src={avatarImageURI}
-          onError={handleImageError}
-          alt=""
+          style={{ backgroundImage: `url("${avatarImageURI}")` }}
         />
       )}
     </div>
