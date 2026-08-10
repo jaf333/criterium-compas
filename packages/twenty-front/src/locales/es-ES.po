@@ -9602,8 +9602,8 @@ msgstr "Ocultar índices del sistema"
 
 #. js-lingui-id: 1ETc0T
 #: src/pages/settings/community/SettingsCommunity.tsx
-msgid "Hire a partner to help you implement and customize Twenty."
-msgstr "Contrata a un socio para que te ayude a implementar y personalizar Twenty."
+msgid "Hire a partner to help you implement and customize CRITERIUM COMPÁS."
+msgstr "Contrata a un socio para que te ayude a implementar y personalizar CRITERIUM COMPÁS."
 
 #. js-lingui-id: i0qMbr
 #: src/modules/navigation/components/MainNavigationDrawerTabsRow.tsx
@@ -13851,8 +13851,8 @@ msgstr "Uno o más filtros hacen referencia a campos desactivados o eliminados y
 
 #. js-lingui-id: 2l4SGU
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
-msgid "One subscription provides one enterprise key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install Twenty on a second server, activate it with this same enterprise key, then register that server as a development instance. Development instances unlock enterprise features without extra billing and do not count toward your production seats."
-msgstr "Una suscripción proporciona una clave empresarial que impulsa una instancia de producción y una posible instancia de ensayo o prueba. Para ejecutar un entorno de ensayo o prueba, instala Twenty en un segundo servidor, actívalo con esta misma clave empresarial y registra ese servidor como instancia de desarrollo. Las instancias de desarrollo desbloquean funciones empresariales sin facturación adicional y no cuentan para tus asientos de producción."
+msgid "One subscription provides one enterprise key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install CRITERIUM COMPÁS on a second server, activate it with this same enterprise key, then register that server as a development instance. Development instances unlock enterprise features without extra billing and do not count toward your production seats."
+msgstr "Una suscripción proporciona una clave empresarial que impulsa una instancia de producción y una posible instancia de ensayo o prueba. Para ejecutar un entorno de ensayo o prueba, instala CRITERIUM COMPÁS en un segundo servidor, actívalo con esta misma clave empresarial y registra ese servidor como instancia de desarrollo. Las instancias de desarrollo desbloquean funciones empresariales sin facturación adicional y no cuentan para tus asientos de producción."
 
 #. js-lingui-id: oFTo3P
 #: src/modules/settings/event-logs/components/SettingsLogs.tsx
@@ -14306,8 +14306,8 @@ msgstr "Nombre de la página"
 
 #. js-lingui-id: NRvxzv
 #: src/pages/not-found/NotFound.tsx
-msgid "Page Not Found | Twenty"
-msgstr "Página no encontrada | Twenty"
+msgid "Page Not Found | CRITERIUM COMPÁS"
+msgstr "Página no encontrada | CRITERIUM COMPÁS"
 
 #. js-lingui-id: oIhFvf
 #: src/modules/side-panel/pages/email-block-settings/components/EmailPageStyleSection.tsx
@@ -18488,8 +18488,8 @@ msgstr "La página que buscas ha desaparecido o nunca existió. Volvamos a la pi
 
 #. js-lingui-id: Ya1wb4
 #: src/pages/settings/legal/SettingsLegalDpaNew.tsx
-msgid "The PDF is pre-signed by Twenty and executed with your legal entity and authorized signatory."
-msgstr "El PDF está prefirmado por Twenty y ejecutado con tu entidad legal y firmante autorizado."
+msgid "The PDF is pre-signed by CRITERIUM COMPÁS and executed with your legal entity and authorized signatory."
+msgstr "El PDF está prefirmado por CRITERIUM COMPÁS y ejecutado con tu entidad legal y firmante autorizado."
 
 #. js-lingui-id: wxyrqd
 #: src/modules/workflow/workflow-steps/workflow-actions/pick-record-action/components/WorkflowEditActionPickRecord.tsx
@@ -19400,8 +19400,8 @@ msgstr "Turquesa"
 
 #. js-lingui-id: JnaRPe
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/components/ColumnGrid.tsx
-msgid "Twenty fields"
-msgstr "Campos de Twenty"
+msgid "CRITERIUM COMPÁS fields"
+msgstr "Campos de CRITERIUM COMPÁS"
 
 #. js-lingui-id: YIjS4q
 #: src/modules/ai/components/SettingsAgentModelCapabilities.tsx
@@ -20963,8 +20963,8 @@ msgstr "Ponderación"
 
 #. js-lingui-id: nTuObL
 #: src/pages/auth/SignInUp.tsx
-msgid "Welcome to Twenty"
-msgstr "Bienvenido a Twenty"
+msgid "Welcome to CRITERIUM COMPÁS"
+msgstr "Bienvenido a CRITERIUM COMPÁS"
 
 #. js-lingui-id: t8ZvkC
 #: src/modules/onboarding/constants/WelcomeTitleMessage.ts
