@@ -90,22 +90,24 @@ export const Logo = ({
           style={{ backgroundImage: `url(${primaryLogoUrl})` }}
         />
       )}
-      {isDefined(secondaryLogoUrl) ? (
-        <StyledSecondaryLogoContainer>
-          <StyledSecondaryLogo src={secondaryLogoUrl} />
-        </StyledSecondaryLogoContainer>
-      ) : (
-        isDefined(placeholder) && (
+      {/* Con el lockup de CRITERIUM la placa secundaria duplica el logo: fuera. */}
+      {!isUsingDefaultLogo &&
+        (isDefined(secondaryLogoUrl) ? (
           <StyledSecondaryLogoContainer>
-            <Avatar
-              size="lg"
-              placeholder={placeholder}
-              type="squared"
-              placeholderColorSeed={placeholder}
-            />
+            <StyledSecondaryLogo src={secondaryLogoUrl} />
           </StyledSecondaryLogoContainer>
-        )
-      )}
+        ) : (
+          isDefined(placeholder) && (
+            <StyledSecondaryLogoContainer>
+              <Avatar
+                size="lg"
+                placeholder={placeholder}
+                type="squared"
+                placeholderColorSeed={placeholder}
+              />
+            </StyledSecondaryLogoContainer>
+          )
+        ))}
     </StyledContainer>
   );
 };
